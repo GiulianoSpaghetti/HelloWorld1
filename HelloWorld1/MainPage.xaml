@@ -1,0 +1,41 @@
+﻿<Page
+    x:Class="HelloWorld1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HelloWorld1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name = "FormLayoutGrid" Background = "LightGray">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width = "Auto" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height = "*" />
+            <RowDefinition Height = "*" />
+            <RowDefinition Height = "*" />
+            <RowDefinition Height = "*" />
+            <RowDefinition Height = "*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row = "0" Grid.Column = "0" Text = "" 
+         Margin = "10" HorizontalAlignment = "Left" VerticalAlignment = "Center" 
+         Width = "200" Name="numeronesoft"/>
+
+        <TextBlock Grid.Row = "1" Grid.Column = "0" Text = "" Margin = "10" 
+         HorizontalAlignment = "Left" VerticalAlignment = "Center" Width = "150" Name="inseriscinome"/>
+
+        <TextBox Grid.Row = "1" Grid.Column = "1" Margin = "10" Name="Nome"/>
+
+        <TextBlock Grid.Row = "2" Grid.Column = "0" Text = "" Margin = "10" 
+         HorizontalAlignment = "Left" VerticalAlignment = "Center" Width = "500" Name="ciaogpl"/>
+
+        <Button Name="Ok" Grid.Row="3" Grid.Column="0" Click="Ok_Click">Ok</Button>
+        <Button Name="Cancel" Grid.Row="3" Grid.Column="1" Click="Cancel_Click">Cancel</Button>
+        <TextBlock Grid.Row="4" Grid.Column="0" Text="" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Center" Width="400" Name="gpl" />
+    </Grid>
+</Page>
