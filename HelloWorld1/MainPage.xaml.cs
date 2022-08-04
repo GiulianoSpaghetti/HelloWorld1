@@ -31,7 +31,7 @@ namespace HelloWorld1
             this.InitializeComponent();
             numeronesoft.Text = resourceMap.GetValue("numeronesoft", resourceContext).ValueAsString;
             inseriscinome.Text = resourceMap.GetValue("inseriscinome", resourceContext).ValueAsString;
-            gpl.Text = resourceMap.GetValue("gplpower", resourceContext).ValueAsString;
+            gpl.Text = resourceMap.GetValue("mitpower", resourceContext).ValueAsString;
         }
 
         private void Ok_Click(object sender, RoutedEventArgs e)
