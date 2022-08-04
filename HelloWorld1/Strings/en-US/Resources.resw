@@ -123,8 +123,8 @@
   <data name="festaFinita" xml:space="preserve">
     <value>the party is over: the first HelloWorld UWP has comed!</value>
   </data>
-  <data name="gplpower" xml:space="preserve">
-    <value>See the power of GPL</value>
+  <data name="mitpower" xml:space="preserve">
+    <value>See the power of MIT</value>
   </data>
   <data name="inseriscinome" xml:space="preserve">
     <value>Insert your name</value>
