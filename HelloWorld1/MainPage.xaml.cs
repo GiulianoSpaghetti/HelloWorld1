@@ -31,18 +31,13 @@ namespace HelloWorld1
             this.InitializeComponent();
             numeronesoft.Text = resourceMap.GetValue("numeronesoft", resourceContext).ValueAsString;
             inseriscinome.Text = resourceMap.GetValue("inseriscinome", resourceContext).ValueAsString;
-            gpl.Text = resourceMap.GetValue("mitpower", resourceContext).ValueAsString;
         }
 
         private void Ok_Click(object sender, RoutedEventArgs e)
         {
-            ciaogpl.Text = resourceMap.GetValue("ciao", resourceContext).ValueAsString + " " + Nome.Text + " " + resourceMap.GetValue("festafinita", resourceContext).ValueAsString;
+            ciaoFrancesca.Text = resourceMap.GetValue("ciao", resourceContext).ValueAsString + " " + Nome.Text + " " + resourceMap.GetValue("festafinita", resourceContext).ValueAsString;
             Ok.IsEnabled = false;
         }
 
-        private void Cancel_Click(object sender, RoutedEventArgs e)
-        {
-            Application.Current.Exit();
-        }
     }
 }

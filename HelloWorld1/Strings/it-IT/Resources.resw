@@ -121,10 +121,7 @@
     <value>Ciao</value>
   </data>
   <data name="festafinita" xml:space="preserve">
-    <value>la festa è finita: il primo HelloWorld internazionalizzato in UWP è arrivato.</value>
-  </data>
-  <data name="mitpower" xml:space="preserve">
-    <value>Guarda la potenza del MIT</value>
+    <value>la festa è finita: Francesca sta arrivando!</value>
   </data>
   <data name="inseriscinome" xml:space="preserve">
     <value>Inserisci il tuo nome</value>

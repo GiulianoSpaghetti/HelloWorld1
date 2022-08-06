@@ -10,7 +10,10 @@
 
     <Grid x:Name = "FormLayoutGrid" Background = "LightGray">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width = "Auto" />
+            <ColumnDefinition Width = "279.696" />
+            <ColumnDefinition Width="106.191"/>
+            <ColumnDefinition Width="494.047"/>
+            <ColumnDefinition Width="619.953"/>
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
 
@@ -19,23 +22,21 @@
             <RowDefinition Height = "*" />
             <RowDefinition Height = "*" />
             <RowDefinition Height = "*" />
-            <RowDefinition Height = "*" />
         </Grid.RowDefinitions>
+        <Rectangle Fill="Red" Width="500" Margin="45,0,75,98" Grid.RowSpan="4" Grid.Column="3" Canvas.ZIndex="0"/>
+        <Rectangle Fill="Green" Margin="5,10,460,98" Grid.ColumnSpan="3" Grid.RowSpan="4" Canvas.ZIndex="0" />
+        <Rectangle Fill="White" Width="500" Margin="34,0,580,98" Grid.RowSpan="4" Grid.ColumnSpan="2" Canvas.ZIndex="0"/>
+        <TextBlock Grid.Column = "2" Text = "" 
+         Margin = "35,0,0,0" HorizontalAlignment = "Left" VerticalAlignment = "Center" 
+         Width = "900" x:Name="numeronesoft" FontSize="70" Canvas.ZIndex="1" Grid.ColumnSpan="2" />
 
-        <TextBlock Grid.Row = "0" Grid.Column = "0" Text = "" 
-         Margin = "10" HorizontalAlignment = "Left" VerticalAlignment = "Center" 
-         Width = "200" Name="numeronesoft"/>
+        <TextBox Grid.Row = "1" Grid.Column = "2" Margin = "61,10,11,10" x:Name="Nome" Grid.ColumnSpan="2"/>
 
-        <TextBlock Grid.Row = "1" Grid.Column = "0" Text = "" Margin = "10" 
-         HorizontalAlignment = "Left" VerticalAlignment = "Center" Width = "150" Name="inseriscinome"/>
+        <TextBlock Grid.Row = "2" Text = "" Margin = "232,125,0,0" 
+         HorizontalAlignment = "Left" VerticalAlignment = "Top" Width = "1250" x:Name="ciaoFrancesca" FontSize="45" Grid.ColumnSpan="4"/>
 
-        <TextBox Grid.Row = "1" Grid.Column = "1" Margin = "10" Name="Nome"/>
-
-        <TextBlock Grid.Row = "2" Grid.Column = "0" Text = "" Margin = "10" 
-         HorizontalAlignment = "Left" VerticalAlignment = "Center" Width = "500" Name="ciaogpl"/>
-
-        <Button Name="Ok" Grid.Row="3" Grid.Column="0" Click="Ok_Click">Ok</Button>
-        <Button Name="Cancel" Grid.Row="3" Grid.Column="1" Click="Cancel_Click">Cancel</Button>
-        <TextBlock Grid.Row="4" Grid.Column="0" Text="" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Center" Width="400" Name="gpl" />
+        <Button x:Name="Ok" Grid.Row="3" Grid.Column="2" Click="Ok_Click" Width="400" Height="200" Content="Ok" Margin="64,10,0,0" VerticalAlignment="Top"/>
+        <TextBlock Grid.Row = "1" Grid.Column = "0" Text = "" Margin = "10,0,0,0" 
+         HorizontalAlignment = "Left" VerticalAlignment = "Center" Width = "150" x:Name="inseriscinome"/>
     </Grid>
 </Page>
